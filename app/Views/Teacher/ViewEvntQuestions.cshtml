@@ -1,0 +1,18 @@
+﻿@model IEnumerable<repository.question>
+
+@{
+    ViewBag.Title = "ViewEvntQuestions";
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+<div>
+    @Request.QueryString["evnt_name"] <br>
+    @Html.ActionLink("+ Add More Questions", "AddMoreEvntQuestion", new { evnt_id=Request.QueryString["evnt_id"],course_id=Request.QueryString["course_id"] })
+    <br>
+    Total Questions : @Model.Count() <br>
+    @foreach (var item in Model)
+    {
+        @item.question_text @item.answer  @Html.ActionLink("Delete", "DeleteEvntQuestion", new { evnt_id=Request.QueryString["evnt_id"] }) <br>
+    }
+    @Html.ActionLink("Back To Event", "ViewEvnt", new { evnt_id=Request.QueryString["evnt_id"],evnt_name= @Request.QueryString["evnt_name"] })
+</div>

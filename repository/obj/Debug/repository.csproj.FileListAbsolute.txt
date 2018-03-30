@@ -1,0 +1,13 @@
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\repository.dll.config
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\repository.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\repository.pdb
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\EntityFramework.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\EntityFramework.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\obj\Debug\repository.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\obj\Debug\repository.pdb
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\obj\Debug\repository.csprojResolveAssemblyReference.cache

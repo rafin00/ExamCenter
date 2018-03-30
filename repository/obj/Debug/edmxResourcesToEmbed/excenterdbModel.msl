@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="excenterdbModelStoreContainer" CdmEntityContainer="excenterdbContext">
+    <EntitySetMapping Name="Answers">
+      <EntityTypeMapping TypeName="excenterdbModel.Answer">
+        <MappingFragment StoreEntitySet="Answers">
+          <ScalarProperty Name="answer_id" ColumnName="answer_id" />
+          <ScalarProperty Name="evnt_id" ColumnName="evnt_id" />
+          <ScalarProperty Name="course_id" ColumnName="course_id" />
+          <ScalarProperty Name="question_id" ColumnName="question_id" />
+          <ScalarProperty Name="myans" ColumnName="myans" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="courses">
+      <EntityTypeMapping TypeName="excenterdbModel.course">
+        <MappingFragment StoreEntitySet="course">
+          <ScalarProperty Name="course_id" ColumnName="course_id" />
+          <ScalarProperty Name="course_name" ColumnName="course_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="evnts">
+      <EntityTypeMapping TypeName="excenterdbModel.evnt">
+        <MappingFragment StoreEntitySet="evnt">
+          <ScalarProperty Name="evnt_id" ColumnName="evnt_id" />
+          <ScalarProperty Name="evnt_name" ColumnName="evnt_name" />
+          <ScalarProperty Name="evnt_sdt" ColumnName="evnt_sdt" />
+          <ScalarProperty Name="evnt_edt" ColumnName="evnt_edt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exams">
+      <EntityTypeMapping TypeName="excenterdbModel.exam">
+        <MappingFragment StoreEntitySet="exam">
+          <ScalarProperty Name="evnt_id" ColumnName="evnt_id" />
+          <ScalarProperty Name="question_id" ColumnName="question_id" />
+          <ScalarProperty Name="course_id" ColumnName="course_id" />
+          <ScalarProperty Name="question_set" ColumnName="question_set" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Faculties">
+      <EntityTypeMapping TypeName="excenterdbModel.Faculty">
+        <MappingFragment StoreEntitySet="Faculties">
+          <ScalarProperty Name="FacultyId" ColumnName="FacultyId" />
+          <ScalarProperty Name="FacultyName" ColumnName="FacultyName" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questions">
+      <EntityTypeMapping TypeName="excenterdbModel.question">
+        <MappingFragment StoreEntitySet="question">
+          <ScalarProperty Name="question_id" ColumnName="question_id" />
+          <ScalarProperty Name="question_text" ColumnName="question_text" />
+          <ScalarProperty Name="option1" ColumnName="option1" />
+          <ScalarProperty Name="option2" ColumnName="option2" />
+          <ScalarProperty Name="answer" ColumnName="answer" />
+          <ScalarProperty Name="course_id" ColumnName="course_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="registrations">
+      <EntityTypeMapping TypeName="excenterdbModel.registration">
+        <MappingFragment StoreEntitySet="registration">
+          <ScalarProperty Name="evnt_id" ColumnName="evnt_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="results">
+      <EntityTypeMapping TypeName="excenterdbModel.result">
+        <MappingFragment StoreEntitySet="result">
+          <ScalarProperty Name="result_id" ColumnName="result_id" />
+          <ScalarProperty Name="evnt_id" ColumnName="evnt_id" />
+          <ScalarProperty Name="course_id" ColumnName="course_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="marks" ColumnName="marks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_info">
+      <EntityTypeMapping TypeName="excenterdbModel.user_info">
+        <MappingFragment StoreEntitySet="user_info">
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="user_type" ColumnName="user_type" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,21 @@
+﻿
+
+@{
+   
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+   <div align="center">
+       <h2>Add New Event</h2>
+        <form method="post">
+        Event Name : <input type="text" name="evnt_name"/> <br>
+        Event Data and Time : <input type="datetime-local" name="evnt_sdt"/><br>
+        Event End Time : <input type="datetime-local" name="evnt_edt"/><br>
+       
+        <input type="submit" Value="CreateNewEvent"/><br>
+   </form>
+    <div>
+        @ViewBag.error<br>
+        <a href="~/Teacher/Index">Back To Home</a>
+    </div>
+       </div>

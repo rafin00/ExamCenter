@@ -1,0 +1,31 @@
+﻿@model IEnumerable<repository.course>
+
+
+@{
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+
+    <div>
+
+        <form method="post">
+           Event ID : <input type="label" id="dropDown0" name="evnt_id" disabled value=@Request.QueryString["evnt_id"] />
+          <br>
+               Select Course 
+             <select name="course_id">
+               :
+               @foreach(var crs in Model){
+                   
+            <option value=@crs.course_id>@crs.course_name</option>
+               }
+           </select></br>
+            Total Questions :  <input type="int" name="totalQuestions" required /></br>
+           
+            Question Selection : 
+            <input type="radio" name="questionSelection" value="1"/>Randomly Select from Repository
+            <input type="radio" name="questionSelection" value="2"/>Select Manually</br>
+            <input type="submit" />
+        </form>
+        @ViewBag.error
+    </div>
+

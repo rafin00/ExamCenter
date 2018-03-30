@@ -1,0 +1,27 @@
+﻿
+@model IEnumerable<repository.evnt>
+
+@{
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+<div>
+<h2>ViewAllEvnt</h2>
+     @Html.ActionLink("Add New Event","AddNewEvnt")
+    <table>
+        <tr>
+            <td>Event Id</td><td>Event Name</td>
+         </tr>
+@foreach (var item in Model)
+{
+    <tr align="center">
+        <td>@item.evnt_id</td>
+           
+        <td>
+            <a id="links2" href="~/Teacher/ViewEvnt?evnt_id=@item.evnt_id&evnt_name=@item.evnt_name&evnt_sdt=@item.evnt_sdt">@item.evnt_name</a>
+        </td>
+       </tr>     
+}
+
+ 
+    
+</div>

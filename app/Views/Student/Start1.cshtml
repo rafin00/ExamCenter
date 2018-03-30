@@ -1,0 +1,56 @@
+﻿@model IEnumerable<repository.exam>
+@{
+    Layout = "~/Views/Shared/StartLayout.cshtml";
+}
+
+ <tr style="height:85vh;">
+    <td align="left" width="20%" style="background-color: rgb(160, 160, 160);" > 
+        @{var x = ""; var cn = 0; }
+        Courses
+        @{ foreach(var std in ViewBag.courses)
+            {
+                x = std.course.course_name;
+               <br><a id="nav" href="~/Student/Start1?evnt_id=@Request.QueryString["evnt_id"]&course_id=@std.course_id">@x</a><br>
+                             
+            } 
+            }
+      
+    </td>
+
+     <td  width="70%" align="center" > 
+       
+            
+        <form method="post">
+    @foreach (var item in Model)
+    {
+        x = ""; var val = ""; var y = "";
+        foreach (var std in ViewBag.answers)
+        {
+            if (std.question_id == item.question_id)
+            {
+                {
+                    if (std.myans == item.question.option1)
+                    { x = "checked"; y = ""; }
+                    else
+                    { x = ""; y = "checked"; }    
+                } break;
+            }
+            else
+            { x = ""; y = ""; }
+
+        }
+        @:Question no. 
+            @cn
+        cn++;
+        <br>
+        @item.question.question_text <br>
+       @:Answer : <input type="radio" name="@item.question.question_id" @x value="@item.question.option1" />@item.question.option1        <input type="radio" name="@item.question.question_id" @y value="@item.question.option2" />@item.question.option2 <br>
+    }
+        <input type="submit" id="btn1" value="finish" />
+            </form>
+   
+             </td>
+
+</tr>
+
+    

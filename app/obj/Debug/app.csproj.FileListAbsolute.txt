@@ -1,0 +1,76 @@
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\app.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\app.pdb
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\Antlr3.Runtime.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\EntityFramework.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\EntityFramework.SqlServer.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\Newtonsoft.Json.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\PayPalCoreSDK.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\repository.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Net.Http.Formatting.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Helpers.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Http.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Http.WebHost.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Mvc.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Optimization.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Razor.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.WebPages.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\WebGrease.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\repository.pdb
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\Antlr3.Runtime.pdb
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\EntityFramework.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\EntityFramework.SqlServer.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\Newtonsoft.Json.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Optimization.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Net.Http.Formatting.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Helpers.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Http.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Http.WebHost.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Mvc.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.Razor.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.WebPages.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\obj\Debug\app.csprojResolveAssemblyReference.cache
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\obj\Debug\app.dll
+C:\Users\User\documents\visual studio 2012\Projects\eXcenter\app\obj\Debug\app.pdb
+C:\Users\User\Desktop\New folder\exCenter\app\bin\app.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\app.pdb
+C:\Users\User\Desktop\New folder\exCenter\app\bin\Antlr3.Runtime.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\EntityFramework.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\Newtonsoft.Json.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\PayPalCoreSDK.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\repository.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Helpers.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Http.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Http.WebHost.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Mvc.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Optimization.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Razor.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.WebPages.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\WebGrease.dll
+C:\Users\User\Desktop\New folder\exCenter\app\bin\repository.pdb
+C:\Users\User\Desktop\New folder\exCenter\app\bin\Antlr3.Runtime.pdb
+C:\Users\User\Desktop\New folder\exCenter\app\bin\EntityFramework.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\Newtonsoft.Json.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Optimization.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Helpers.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Http.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Http.WebHost.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Mvc.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.Razor.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.WebPages.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\New folder\exCenter\app\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Desktop\New folder\exCenter\app\obj\Debug\app.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\New folder\exCenter\app\obj\Debug\app.dll
+C:\Users\User\Desktop\New folder\exCenter\app\obj\Debug\app.pdb

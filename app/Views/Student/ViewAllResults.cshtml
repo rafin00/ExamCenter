@@ -1,0 +1,22 @@
+﻿@model IEnumerable<repository.registration>
+@{
+    ViewBag.Title = "ViewAllResults";
+    Layout = "~/Views/Shared/StdLayout.cshtml";
+}
+
+
+<div align="center">
+    <table align="center" >
+        <tr align="center" >
+            <td>Event ID</td><td>Event Name</td><td>Result</td>
+         </tr>
+     @foreach (var item in Model)
+        {   <tr align="center">
+           <td> @item.evnt_id </td><td> @item.evnt.evnt_name </td> <td> @item.result </td>
+            </tr>
+            }
+        </table>
+    </div>
+       
+
+      

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<repository.course>
+@{
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+
+    <div>
+        @Request.QueryString["evnt_name"]<br>
+       
+         @Html.ActionLink("Add New Course To event", "AddEvntCourse", new { evnt_id=Request.QueryString["evnt_id"] })
+       
+        <br>  @Html.ActionLink("Assign/Unassign Students", "AssignStudent", new { evnt_id=Request.QueryString["evnt_id"] })<br>
+        View Questions : <br> @foreach (var item in Model)
+        {
+             @Html.ActionLink(@item.course_name, "ViewEvntQuestions", new { evnt_id=Request.QueryString["evnt_id"],  course_id=item.course_id ,evnt_name= @Request.QueryString["evnt_name"] })<br>
+
+        }
+    </div>
+

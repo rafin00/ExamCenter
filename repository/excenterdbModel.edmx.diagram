@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75ce802684454d3084c346d03d730a01" Name="Diagram1">
+        <EntityTypeShape EntityType="excenterdbModel.Answer" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="excenterdbModel.course" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="excenterdbModel.evnt" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="excenterdbModel.exam" Width="1.5" PointX="6" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="excenterdbModel.Faculty" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="excenterdbModel.question" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="excenterdbModel.registration" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="excenterdbModel.result" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="excenterdbModel.user_info" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="excenterdbModel.FK_Answers_course" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_Answers_evnt" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_Answers_question" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_Answers_user_info" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_exam_course" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_question_course" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_result_course" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_exam_evnt" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_registration_evnt" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_result_evnt" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_exam_question" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_registration_user_info" ManuallyRouted="false" />
+        <AssociationConnector Association="excenterdbModel.FK_result_user_info" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

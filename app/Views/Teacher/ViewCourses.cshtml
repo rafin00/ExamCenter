@@ -1,0 +1,16 @@
+﻿@model IEnumerable<repository.course>
+
+@{
+    ViewBag.Title = "ViewCourses";
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+<div>
+
+    @Html.ActionLink("+ Add New Course", "AddNewCourse")
+    <br>
+    @foreach(var item in Model)
+    {
+        <pre>@item.course_name  <button> @Html.ActionLink("View Questions", "ViewQuestions", new {  course_id=item.course_id,course_name=item.course_name })</button>   <button>@Html.ActionLink("Delete", "DeleteCourse", new { course_id = item.course_id, course_name = item.course_name }) </button> </pre> <br> }
+
+    </div>

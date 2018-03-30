@@ -1,0 +1,38 @@
+﻿@model repository.user_info
+@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        </title>
+    <style>
+div {
+    width: 100px;
+    height: 400px;
+    
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+}
+</style>
+</head>
+<body>
+<div id="content" class="center">
+        Login
+        <form method="post"> 
+        <input name="user_name" value="utshaw">
+    <input type="password" name="password" value="utshaw">
+      <input type="submit" name="Register">
+    </form>
+           
+   @Html.ActionLink("SignUp", "Signup")
+    @ViewBag.error 
+      </div>
+    </body>
+    </html>

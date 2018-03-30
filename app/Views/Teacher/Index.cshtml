@@ -1,0 +1,23 @@
+﻿@model IEnumerable<repository.evnt>
+
+@{
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+
+
+
+    <div>
+       UpComing Events
+        <br>
+        @Html.ActionLink("Add New Event","AddNewEvnt")
+        @foreach (var item in Model) {
+        
+              
+           <pre>   @Html.ActionLink(@item.evnt_name, "ViewEvnt", new {  evnt_id=item.evnt_id , evnt_name=item.evnt_name })  @item.evnt_sdt </pre> 
+                  <br>
+           
+        }
+           
+
+    </div>

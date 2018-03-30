@@ -1,0 +1,40 @@
+﻿@model IEnumerable<repository.user_info>
+@using System.Web.Optimization
+@{
+   
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+    <div>
+
+        Total Assigned Students : @ViewBag.check.Count
+        
+        <table>
+        <tr><td></td><td>Student username</td><td>Student Name</td></tr>
+        @{TempData["evnt_id"]=Request.QueryString["evnt_id"];} 
+        <form method="post" id="myForm">
+            @{var x="";}
+        @foreach(var item in Model)
+        {  x="";
+            foreach(var std in ViewBag.check)
+            { 
+                if (std.user_name == item.user_name)
+                {
+                    {x = "checked";} break;
+                }
+                else
+                { x = "";}
+                            
+            } <tr><td>
+            <input type="hidden" name="@item.user_name"  value="-1" /> 
+            <input type="checkbox" name="@item.user_name" @x value="@item.user_name" /></td> 
+                <td>@item.user_name</td>
+                <td> @item.name
+            </td>
+                </tr>
+        } </table>
+            <input type="button" id="btn"  value="Save"><br />
+            </form>
+         <button onclick="@("window.location.href='" + @Url.Action("Index", "Teacher") + "'")    ;">Finish</button>
+      <br>  <a id="links" href="~/Teacher/Index">Back To Home</a>
+    </div>

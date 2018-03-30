@@ -1,0 +1,61 @@
+﻿@model repository.question
+
+@{
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+<div>
+
+    @using (Html.BeginForm()) {
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>question</legend>
+    
+          
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.question_text)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.question_text)
+                @Html.ValidationMessageFor(model => model.question_text)
+            </div>
+            
+            <div class="editor-label">
+                @Html.LabelFor(model => model.option1)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.option1)
+                @Html.ValidationMessageFor(model => model.option1)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.option2)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.option2)
+                @Html.ValidationMessageFor(model => model.option2)
+            </div>
+    
+            
+            <div class="editor-label">
+                @Html.LabelFor(model => model.answer)
+            </div>
+            <div class="editor-field">
+                <input type="radio" name="answer" value="1" /> Option1
+                <input type="radio" name="answer" value="2" /> Option2   
+            </div>
+    
+          
+    
+            <p>
+                <input type="submit" value="Create" />
+            </p>
+        </fieldset>
+    }
+    
+    <div>
+     <a id="links" href="~/Teacher/Index">Back To Home</a>
+    </div>
+    @ViewBag.error
+    </div>

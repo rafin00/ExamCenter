@@ -1,0 +1,19 @@
+﻿@using System.Web.Optimization
+@model IEnumerable<repository.registration>
+@{
+    ViewBag.Title = "ViewAllResults";
+    Layout = "~/Views/Shared/StdLayout.cshtml";
+}
+<div align="center">
+      Upcoming Events
+       <br>
+
+        @foreach (var item in Model) {
+        
+            
+                
+           <pre> <a id="links2" href="~/Student/Start?evnt_id=@item.evnt.evnt_id">@item.evnt.evnt_name</a>  @item.evnt.evnt_sdt @item.evnt.evnt_edt</pre> 
+                  <br> @ViewBag.error
+           @TempData["error"]
+        }
+</div>

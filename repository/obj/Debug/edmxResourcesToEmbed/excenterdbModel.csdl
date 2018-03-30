@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="excenterdbModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="excenterdbContext" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Answers" EntityType="excenterdbModel.Answer" />
+    <EntitySet Name="courses" EntityType="excenterdbModel.course" />
+    <EntitySet Name="evnts" EntityType="excenterdbModel.evnt" />
+    <EntitySet Name="exams" EntityType="excenterdbModel.exam" />
+    <EntitySet Name="Faculties" EntityType="excenterdbModel.Faculty" />
+    <EntitySet Name="questions" EntityType="excenterdbModel.question" />
+    <EntitySet Name="registrations" EntityType="excenterdbModel.registration" />
+    <EntitySet Name="results" EntityType="excenterdbModel.result" />
+    <EntitySet Name="user_info" EntityType="excenterdbModel.user_info" />
+    <AssociationSet Name="FK_Answers_course" Association="excenterdbModel.FK_Answers_course">
+      <End Role="course" EntitySet="courses" />
+      <End Role="Answers" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Answers_evnt" Association="excenterdbModel.FK_Answers_evnt">
+      <End Role="evnt" EntitySet="evnts" />
+      <End Role="Answers" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Answers_question" Association="excenterdbModel.FK_Answers_question">
+      <End Role="question" EntitySet="questions" />
+      <End Role="Answers" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Answers_user_info" Association="excenterdbModel.FK_Answers_user_info">
+      <End Role="user_info" EntitySet="user_info" />
+      <End Role="Answers" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_exam_course" Association="excenterdbModel.FK_exam_course">
+      <End Role="course" EntitySet="courses" />
+      <End Role="exam" EntitySet="exams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_question_course" Association="excenterdbModel.FK_question_course">
+      <End Role="course" EntitySet="courses" />
+      <End Role="question" EntitySet="questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_result_course" Association="excenterdbModel.FK_result_course">
+      <End Role="course" EntitySet="courses" />
+      <End Role="result" EntitySet="results" />
+    </AssociationSet>
+    <AssociationSet Name="FK_exam_evnt" Association="excenterdbModel.FK_exam_evnt">
+      <End Role="evnt" EntitySet="evnts" />
+      <End Role="exam" EntitySet="exams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_registration_evnt" Association="excenterdbModel.FK_registration_evnt">
+      <End Role="evnt" EntitySet="evnts" />
+      <End Role="registration" EntitySet="registrations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_result_evnt" Association="excenterdbModel.FK_result_evnt">
+      <End Role="evnt" EntitySet="evnts" />
+      <End Role="result" EntitySet="results" />
+    </AssociationSet>
+    <AssociationSet Name="FK_exam_question" Association="excenterdbModel.FK_exam_question">
+      <End Role="question" EntitySet="questions" />
+      <End Role="exam" EntitySet="exams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_registration_user_info" Association="excenterdbModel.FK_registration_user_info">
+      <End Role="user_info" EntitySet="user_info" />
+      <End Role="registration" EntitySet="registrations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_result_user_info" Association="excenterdbModel.FK_result_user_info">
+      <End Role="user_info" EntitySet="user_info" />
+      <End Role="result" EntitySet="results" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="answer_id" />
+    </Key>
+    <Property Name="answer_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="evnt_id" Type="Int32" Nullable="false" />
+    <Property Name="course_id" Type="Int32" Nullable="false" />
+    <Property Name="question_id" Type="Int32" Nullable="false" />
+    <Property Name="myans" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="user_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="course" Relationship="excenterdbModel.FK_Answers_course" FromRole="Answers" ToRole="course" />
+    <NavigationProperty Name="evnt" Relationship="excenterdbModel.FK_Answers_evnt" FromRole="Answers" ToRole="evnt" />
+    <NavigationProperty Name="question" Relationship="excenterdbModel.FK_Answers_question" FromRole="Answers" ToRole="question" />
+    <NavigationProperty Name="user_info" Relationship="excenterdbModel.FK_Answers_user_info" FromRole="Answers" ToRole="user_info" />
+  </EntityType>
+  <EntityType Name="course">
+    <Key>
+      <PropertyRef Name="course_id" />
+    </Key>
+    <Property Name="course_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="course_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Answers" Relationship="excenterdbModel.FK_Answers_course" FromRole="course" ToRole="Answers" />
+    <NavigationProperty Name="exams" Relationship="excenterdbModel.FK_exam_course" FromRole="course" ToRole="exam" />
+    <NavigationProperty Name="questions" Relationship="excenterdbModel.FK_question_course" FromRole="course" ToRole="question" />
+    <NavigationProperty Name="results" Relationship="excenterdbModel.FK_result_course" FromRole="course" ToRole="result" />
+  </EntityType>
+  <EntityType Name="evnt">
+    <Key>
+      <PropertyRef Name="evnt_id" />
+    </Key>
+    <Property Name="evnt_id" Type="Int32" Nullable="false" />
+    <Property Name="evnt_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="evnt_sdt" Type="DateTime" Precision="0" />
+    <Property Name="evnt_edt" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Answers" Relationship="excenterdbModel.FK_Answers_evnt" FromRole="evnt" ToRole="Answers" />
+    <NavigationProperty Name="exams" Relationship="excenterdbModel.FK_exam_evnt" FromRole="evnt" ToRole="exam" />
+    <NavigationProperty Name="registrations" Relationship="excenterdbModel.FK_registration_evnt" FromRole="evnt" ToRole="registration" />
+    <NavigationProperty Name="results" Relationship="excenterdbModel.FK_result_evnt" FromRole="evnt" ToRole="result" />
+  </EntityType>
+  <EntityType Name="exam">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="evnt_id" Type="Int32" Nullable="false" />
+    <Property Name="question_id" Type="Int32" Nullable="false" />
+    <Property Name="course_id" Type="Int32" Nullable="false" />
+    <Property Name="question_set" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="course" Relationship="excenterdbModel.FK_exam_course" FromRole="exam" ToRole="course" />
+    <NavigationProperty Name="evnt" Relationship="excenterdbModel.FK_exam_evnt" FromRole="exam" ToRole="evnt" />
+    <NavigationProperty Name="question" Relationship="excenterdbModel.FK_exam_question" FromRole="exam" ToRole="question" />
+  </EntityType>
+  <EntityType Name="Faculty">
+    <Key>
+      <PropertyRef Name="FacultyId" />
+    </Key>
+    <Property Name="FacultyId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="FacultyName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Department" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="question">
+    <Key>
+      <PropertyRef Name="question_id" />
+    </Key>
+    <Property Name="question_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="question_text" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="option1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="option2" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="answer" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="course_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Answers" Relationship="excenterdbModel.FK_Answers_question" FromRole="question" ToRole="Answers" />
+    <NavigationProperty Name="course" Relationship="excenterdbModel.FK_question_course" FromRole="question" ToRole="course" />
+    <NavigationProperty Name="exams" Relationship="excenterdbModel.FK_exam_question" FromRole="question" ToRole="exam" />
+  </EntityType>
+  <EntityType Name="registration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="evnt_id" Type="Int32" Nullable="false" />
+    <Property Name="user_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="result" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="evnt" Relationship="excenterdbModel.FK_registration_evnt" FromRole="registration" ToRole="evnt" />
+    <NavigationProperty Name="user_info" Relationship="excenterdbModel.FK_registration_user_info" FromRole="registration" ToRole="user_info" />
+  </EntityType>
+  <EntityType Name="result">
+    <Key>
+      <PropertyRef Name="result_id" />
+    </Key>
+    <Property Name="result_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="evnt_id" Type="Int32" Nullable="false" />
+    <Property Name="course_id" Type="Int32" Nullable="false" />
+    <Property Name="user_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="marks" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="course" Relationship="excenterdbModel.FK_result_course" FromRole="result" ToRole="course" />
+    <NavigationProperty Name="evnt" Relationship="excenterdbModel.FK_result_evnt" FromRole="result" ToRole="evnt" />
+    <NavigationProperty Name="user_info" Relationship="excenterdbModel.FK_result_user_info" FromRole="result" ToRole="user_info" />
+  </EntityType>
+  <EntityType Name="user_info">
+    <Key>
+      <PropertyRef Name="user_name" />
+    </Key>
+    <Property Name="user_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="user_type" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Answers" Relationship="excenterdbModel.FK_Answers_user_info" FromRole="user_info" ToRole="Answers" />
+    <NavigationProperty Name="registrations" Relationship="excenterdbModel.FK_registration_user_info" FromRole="user_info" ToRole="registration" />
+    <NavigationProperty Name="results" Relationship="excenterdbModel.FK_result_user_info" FromRole="user_info" ToRole="result" />
+  </EntityType>
+  <Association Name="FK_Answers_course">
+    <End Role="course" Type="excenterdbModel.course" Multiplicity="1" />
+    <End Role="Answers" Type="excenterdbModel.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="course">
+        <PropertyRef Name="course_id" />
+      </Principal>
+      <Dependent Role="Answers">
+        <PropertyRef Name="course_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Answers_evnt">
+    <End Role="evnt" Type="excenterdbModel.evnt" Multiplicity="1" />
+    <End Role="Answers" Type="excenterdbModel.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="evnt">
+        <PropertyRef Name="evnt_id" />
+      </Principal>
+      <Dependent Role="Answers">
+        <PropertyRef Name="evnt_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Answers_question">
+    <End Role="question" Type="excenterdbModel.question" Multiplicity="1" />
+    <End Role="Answers" Type="excenterdbModel.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="question">
+        <PropertyRef Name="question_id" />
+      </Principal>
+      <Dependent Role="Answers">
+        <PropertyRef Name="question_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Answers_user_info">
+    <End Role="user_info" Type="excenterdbModel.user_info" Multiplicity="1" />
+    <End Role="Answers" Type="excenterdbModel.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_info">
+        <PropertyRef Name="user_name" />
+      </Principal>
+      <Dependent Role="Answers">
+        <PropertyRef Name="user_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_exam_course">
+    <End Role="course" Type="excenterdbModel.course" Multiplicity="1" />
+    <End Role="exam" Type="excenterdbModel.exam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="course">
+        <PropertyRef Name="course_id" />
+      </Principal>
+      <Dependent Role="exam">
+        <PropertyRef Name="course_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_question_course">
+    <End Role="course" Type="excenterdbModel.course" Multiplicity="1" />
+    <End Role="question" Type="excenterdbModel.question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="course">
+        <PropertyRef Name="course_id" />
+      </Principal>
+      <Dependent Role="question">
+        <PropertyRef Name="course_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_result_course">
+    <End Role="course" Type="excenterdbModel.course" Multiplicity="1" />
+    <End Role="result" Type="excenterdbModel.result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="course">
+        <PropertyRef Name="course_id" />
+      </Principal>
+      <Dependent Role="result">
+        <PropertyRef Name="course_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_exam_evnt">
+    <End Role="evnt" Type="excenterdbModel.evnt" Multiplicity="1" />
+    <End Role="exam" Type="excenterdbModel.exam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="evnt">
+        <PropertyRef Name="evnt_id" />
+      </Principal>
+      <Dependent Role="exam">
+        <PropertyRef Name="evnt_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_registration_evnt">
+    <End Role="evnt" Type="excenterdbModel.evnt" Multiplicity="1" />
+    <End Role="registration" Type="excenterdbModel.registration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="evnt">
+        <PropertyRef Name="evnt_id" />
+      </Principal>
+      <Dependent Role="registration">
+        <PropertyRef Name="evnt_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_result_evnt">
+    <End Role="evnt" Type="excenterdbModel.evnt" Multiplicity="1" />
+    <End Role="result" Type="excenterdbModel.result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="evnt">
+        <PropertyRef Name="evnt_id" />
+      </Principal>
+      <Dependent Role="result">
+        <PropertyRef Name="evnt_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_exam_question">
+    <End Role="question" Type="excenterdbModel.question" Multiplicity="1" />
+    <End Role="exam" Type="excenterdbModel.exam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="question">
+        <PropertyRef Name="question_id" />
+      </Principal>
+      <Dependent Role="exam">
+        <PropertyRef Name="question_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_registration_user_info">
+    <End Role="user_info" Type="excenterdbModel.user_info" Multiplicity="1" />
+    <End Role="registration" Type="excenterdbModel.registration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_info">
+        <PropertyRef Name="user_name" />
+      </Principal>
+      <Dependent Role="registration">
+        <PropertyRef Name="user_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_result_user_info">
+    <End Role="user_info" Type="excenterdbModel.user_info" Multiplicity="1" />
+    <End Role="result" Type="excenterdbModel.result" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_info">
+        <PropertyRef Name="user_name" />
+      </Principal>
+      <Dependent Role="result">
+        <PropertyRef Name="user_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<repository.question>
+
+@{
+    ViewBag.Title = "EditAllCourseQuestions";
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+<h2>EditAllCourseQuestions</h2>
+
+<p>
+    @Html.ActionLink("+ Add New Questions", "AddNewQuestions", new { course_id=@Request.QueryString["course_id"] })
+</p>
+<table>
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.question_text)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.option1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.option2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.answer)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.question_text)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.option1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.option2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.answer)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Edit", "EditQuestion", new { question_id=item.question_id  }) |
+           
+            @Html.ActionLink("Delete", "DeleteQuestion", new { question_id=item.question_id  })
+        </td>
+    </tr>
+}
+
+</table>

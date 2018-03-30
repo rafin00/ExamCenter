@@ -1,0 +1,25 @@
+﻿@model IEnumerable<repository.result>
+
+@{
+    ViewBag.Title = "ViewReport";
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+
+
+<div>
+<h2>Average Marks By Courses</h2>
+    <table>
+        <tr>
+            <td>Course Id</td><td>Course Name</td><td>Average Marks</td>
+         </tr>
+@foreach (var item in Model)
+{
+    <tr align="center">
+        <td>@item.course_id</td> <td>@item.course.course_name</td> <td>@item.marks</td>
+       </tr>     
+}
+
+ 
+    
+</div>

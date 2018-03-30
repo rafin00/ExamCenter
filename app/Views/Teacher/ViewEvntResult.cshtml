@@ -1,0 +1,14 @@
+﻿@model IEnumerable<repository.registration>
+
+@{
+    ViewBag.Title = "ViewEvntResult";
+    Layout = "~/Views/Shared/ThrLayout.cshtml";
+}
+
+<div>
+    @Model.ElementAt(0).evnt.evnt_name
+    @foreach (var reg in Model)
+    {
+        <pre> @reg.user_info.name @reg.user_name @reg.result </pre>
+    }
+    </div>
