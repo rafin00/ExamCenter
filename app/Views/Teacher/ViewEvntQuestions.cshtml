@@ -10,9 +10,12 @@
     @Html.ActionLink("+ Add More Questions", "AddMoreEvntQuestion", new { evnt_id=Request.QueryString["evnt_id"],course_id=Request.QueryString["course_id"] })
     <br>
     Total Questions : @Model.Count() <br>
+    <table> 
+        <tr align="center"><td>Question ID</td><td>Question</td><td>Qnswer</td><td></td></tr>
     @foreach (var item in Model)
-    {
-        @item.question_text @item.answer  @Html.ActionLink("Delete", "DeleteEvntQuestion", new { evnt_id=Request.QueryString["evnt_id"] }) <br>
-    }
+    {  <tr align="center">
+        <td>@item.question_id</td><td>@item.question_text</td><td> @item.answer </td> <td>@Html.ActionLink("Delete", "DeleteEvntQuestion", new { evnt_id=Request.QueryString["evnt_id"] }) </td>
+        </tr>
+        }
     @Html.ActionLink("Back To Event", "ViewEvnt", new { evnt_id=Request.QueryString["evnt_id"],evnt_name= @Request.QueryString["evnt_name"] })
 </div>

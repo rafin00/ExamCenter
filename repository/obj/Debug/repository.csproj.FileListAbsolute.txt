@@ -11,3 +11,16 @@ C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\bin\Debu
 C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\obj\Debug\repository.dll
 C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\obj\Debug\repository.pdb
 C:\Users\User\documents\visual studio 2012\Projects\eXcenter\repository\obj\Debug\repository.csprojResolveAssemblyReference.cache
+D:\Study\prog\atp2\New folder\repository\bin\Debug\repository.dll.config
+D:\Study\prog\atp2\New folder\repository\bin\Debug\repository.dll
+D:\Study\prog\atp2\New folder\repository\bin\Debug\repository.pdb
+D:\Study\prog\atp2\New folder\repository\bin\Debug\EntityFramework.dll
+D:\Study\prog\atp2\New folder\repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\prog\atp2\New folder\repository\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\Study\prog\atp2\New folder\repository\bin\Debug\System.Data.SqlServerCe.dll
+D:\Study\prog\atp2\New folder\repository\bin\Debug\EntityFramework.xml
+D:\Study\prog\atp2\New folder\repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\prog\atp2\New folder\repository\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\Study\prog\atp2\New folder\repository\obj\Debug\repository.csprojResolveAssemblyReference.cache
+D:\Study\prog\atp2\New folder\repository\obj\Debug\repository.dll
+D:\Study\prog\atp2\New folder\repository\obj\Debug\repository.pdb

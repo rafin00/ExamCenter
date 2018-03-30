@@ -57,7 +57,7 @@
             var p = $.urlParam('evnt_id');
             var c = $.urlParam('course_id');
            
-            alert(n + v +p +c);
+           // alert(n + v +p +c);
             $.ajax({ 
                 url: 'SaveAnswers',
                 type: "GET",
