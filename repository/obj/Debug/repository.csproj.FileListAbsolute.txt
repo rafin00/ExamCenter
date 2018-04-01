@@ -24,3 +24,16 @@ D:\Study\prog\atp2\New folder\repository\bin\Debug\EntityFramework.SqlServerComp
 D:\Study\prog\atp2\New folder\repository\obj\Debug\repository.csprojResolveAssemblyReference.cache
 D:\Study\prog\atp2\New folder\repository\obj\Debug\repository.dll
 D:\Study\prog\atp2\New folder\repository\obj\Debug\repository.pdb
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\repository.dll.config
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\repository.dll
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\repository.pdb
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\EntityFramework.dll
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\EntityFramework.xml
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\obj\Debug\repository.csprojResolveAssemblyReference.cache
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\obj\Debug\repository.dll
+C:\Users\User\Google Drive\University\Study\ATP2\Project\mid\New folder\repository\obj\Debug\repository.pdb
